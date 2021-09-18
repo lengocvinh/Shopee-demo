@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="app ">
+        <header class="header-checkout ">
+            <div class="grid ">
+
+                <nav class="header__navbar ">
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate ">
+                            Vào cửa hàng trên ứng dụng Shopee
+                            <!-- Header QR Code -->
+                            <div class="header__qr ">
+                                <img src="./assets/img/QR_code.png " alt="QR code " class="header__qr-img ">
+                                <div class="header__qr-apps ">
+                                    <a href=" " class="header__qr-link ">
+                                        <img src="./assets/img/googleplay.png " alt="GooglePlay " class="header__qr-download-app ">
+                                    </a>
+                                    <a href=" " class="header__qr-link ">
+                                        <img src="./assets/img/appstore.png " alt="AppStore " class="header__qr-download-app ">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <span class="header__navbar-title--no-pointer ">Kết nối</span>
+                            <a href=" " class="header__navbar-icon-link ">
+                                <i class="header__navbar-icon fab fa-facebook "></i>
+                            </a>
+                            <a href=" " class="header__navbar-icon-link ">
+                                <i class="header__navbar-icon fab fa-instagram "></i>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-item-has--notify ">
+                            <a href=" " class="header__navbar-item-link ">
+                                <i class="header__navbar-icon-link far fa-bell "></i> <span>Thông báo</span>
+                            </a>
+                            <div class="header__notify ">
+                                <header class="header__notify-header ">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list ">
+                                    <li class="header__notify-item header__notify-item--viewed ">
+                                        <a class="header__notify-link " href=" ">
+                                            <img src="https://img.abaha.vn/photos/resized/200x120/83-1625652146-myphamohui-lgvina.png " alt=" " class="header__notify-img ">
+                                            <div class="header__notify-info ">
+                                                <span class="header__notify-name ">Mỹ Phẩm Ohui Chính Hãng </span>
+                                                <span class="header__notify-desc ">Có câu nói rằng: “Ngắm nhìn những điều đẹp đẽ cũng có thể khiến tâm trạng chúng ta trở nên tốt hơn nhiều”. Thật vậy, đó là lý do ai cũng thích hướng đến những điều xinh đẹp và hoàn mỹ của cuộc sống.</span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a class="header__notify-link " href=" ">
+                                            <img src="./assets/img/83-myphamohui-lgvina.png " alt=" " class="header__notify-img ">
+                                            <div class="header__notify-info ">
+                                                <span class="header__notify-name ">Bí mật của O HUI - Không chỉ ở công nghệ!</span>
+                                                <span class="header__notify-desc ">O HUI Ultimate Cover Cushion Limited Edition chính là món quà bất ngờ mà chúng tôi dành tặng bạn. Ẩn chứa trong chiếc hộp màu hồng là khu vườn hoa tràn đầy sức sống</span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a class="header__notify-link " href=" ">
+                                            <img src="./assets/img/myphamohui-lgvina.png " alt=" " class="header__notify-img ">
+                                            <div class="header__notify-info ">
+                                                <span class="header__notify-name ">Khi cushion cũng có thể khiến bạn hạnh phúc !</span>
+                                                <span class="header__notify-desc ">Vẫn mang đầy đủ tính năng ưu việt từ Cushion của O HUI, hài hòa với chiết xuất từ hoa bách hợp cho hiệu quả giữ ẩm siêu việt, cushion giúp làn da bạn luôn ẩm mịn, bóng khỏe và tràn đầy sức sống.</span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__notify-footer ">
+                                    <a href=" " class="header__notify-footer-btn ">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <a href=" " class="header__navbar-item-link ">
+                                <i class="header__navbar-icon-link far fa-question-circle "></i> <span>Trợ giúp</span>
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--separate js__header-rigister ">Đăng ký</li>
+                        <li class="header__navbar-item js__header-login ">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user ">
+                            <img src="./assets/css/avatar.jpg " alt="avatar " class="header__navbar-user-avatar ">
+                            <span class="header__navbar-user-name ">Vinh Lê</span>
+                            <ul class="header__navbar-user-menu ">
+                                <li class="header__navbar-user-item ">
+                                    <a href=" ">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item ">
+                                    <a href=" ">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item ">
+                                    <a href=" ">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--saparate ">
+                                    <a href=" ">Đăng xuất</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- Header Width Search -->
+
+
+            </div>
+
+        </header>
+
+
+    </div>
+
+</body>

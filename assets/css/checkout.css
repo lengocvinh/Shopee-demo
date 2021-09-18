@@ -1,0 +1,10 @@
+.header-checkout {
+    height: 35px;
+    background-image: linear-gradient(0, #fe6232, #f6432d, #fc5c31);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+}
