@@ -9,11 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/checkout.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
@@ -130,6 +129,80 @@
 
                 </nav>
                 <!-- Header Width Search -->
+                <div class="boxcenter">
+                    <div class="row mb header">
+                        <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+                    </div>
+                   
+                    <div class="row mb ">
+                        <div class="boxtrai mr">
+                            <div class="row">
+                                <!-- <div class="row mb">
+                                    <h1>ĐẶT HÀNG THÀNH CÔNG</h1>
+                                </div> -->
+                                <h1>THÔNG TIN NHẬN HÀNG</h1>
+                                <table class="thongtinnhanhang">
+                                    <tbody id = "thongtinnhanhang">
+                                        <tr>
+                                            <td width="20%">Họ tên</td>
+                                            <td><input type="text" name="" id=""><td>
+                                            </tr>
+                                            <tr>
+                                            <td>Địa chỉ</td>
+                                            <td><input type="text" name="" id=""><td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Điện thoại</td>
+                                            <td><input type="text" name="" id=""><td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Email</td>
+                                            <td><input type="email" name="" id=""><td>
+
+                                            </tr>
+                                      
+            
+                                    </tbody>
+                                   
+                                </table>
+                            </div>
+                            <div class="row mb">
+                                <h1>GIỎ HÀNG</h1>
+                                <table>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Hình</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Đơn giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Thành tiền ($)</th>
+                                    </tr>
+                                    <tbody id= "mycart">
+                                      <tr>
+                                        <td>1</td>   
+                                        <td><img src="./assets/img/Mercedes-GLC-300.jpg" alt=""></td>
+                                        <td>SH300i</td>
+                                        <td>1 tỷ</td>
+                                        <td>1</td>
+                                        <td>1 tỷ</td>
+                                      </tr>
+
+                                       
+                                        
+            
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row mb">
+                                <button class="dongy">ĐỒNG Ý ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
 
 
             </div>
@@ -138,5 +211,9 @@
 
 
     </div>
+    <script src="./js/cart2.js"></script>
+    <script>
+        moveCart()
+    </script>
 
 </body>

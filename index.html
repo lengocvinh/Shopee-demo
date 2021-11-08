@@ -17,7 +17,7 @@
 
 </head>
 
-<body onload="renderListProduct()">
+<body >
     <div class="app ">
         <header class="header ">
             <div class="grid ">
@@ -206,80 +206,20 @@
                             <i class="header__search-btn-icon fas fa-search "></i>
                          </button>
                     </div>
-                    <div class="header__cart ">
-                        <i class="header__cart-icon fas fa-shopping-cart "></i>
-                        <span class="header__cart-notice ">3</span>
+                    <div class="header__cart">
+                        <i onclick="showCart()" class="header__cart-icon fas fa-shopping-cart"></i>
+                        <span class="header__cart-notice">0</span>
                         <!-- No cart header__cart-list--no-cart -->
-                        <div class="header__cart-list ">
-                            <img src="./assets/img/no-cart.png " alt="Không Có sản phẩm " class="header__cart-no-cart-img ">
-                            <p class="header__cart-list--no-cart-text ">
+                        <div class="header__cart-list">
+                            <img src="./assets/img/no-cart.png" alt="Không Có sản phẩm" class="header__cart-no-cart-img">
+                            <p class="header__cart-list--no-cart-text">
                                 Chưa có sản phẩm</p>
 
                             <!-- Cart item -->
-                            <h4 class="header__cart-heading ">Sản phẩm đã thêm</h4>
-                            <ul class="header__cart-list-item ">
-                                <li class="header__cart-item ">
-                                    <img class="header__cart-item-img " src="./assets/img/BAC_3293_zing.jpg " alt="Lamboghini Urus ">
-                                    <div class="header__cart-item-info ">
-                                        <div class="header__cart-item-head ">
-                                            <h5 class="header__cart-item-name ">Lamboghini Urus</h5>
-                                            <div class="header__cart-item-price-wrap ">
-                                                <span class="header__cart-item-price ">1.500.000$</span>
-                                                <span class="header__cart-item-multiply ">x</span>
-                                                <span class="header__cart-item-qnt ">2</span>
 
-                                            </div>
-                                        </div>
-                                        <div class="header__cart-item-body ">
-                                            <span class="header__cart-item-desc ">
-                                                Phân Loại : Siêu Xe
-                                            </span>
-                                            <span class="header__cart-item-remove ">Xoá</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img class="header__cart-item-img" src="./assets/img/Mercedes-GLC-300.jpg " alt="Lamboghini Urus ">
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">Mercedes GLC300</h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">140.000$</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">3</span>
+                          
 
-                                            </div>
-                                        </div>
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-desc">
-                                                Phân Loại : SUV
-                                            </span>
-                                            <span class="header__cart-item-remove">Xoá</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item ">
-                                    <img class="header__cart-item-img " src="./assets/img/Macan.jpg " alt="Lamboghini Urus ">
-                                    <div class="header__cart-item-info ">
-                                        <div class="header__cart-item-head ">
-                                            <h5 class="header__cart-item-name ">Porsche Macan</h5>
-                                            <div class="header__cart-item-price-wrap ">
-                                                <span class="header__cart-item-price ">150.000$</span>
-                                                <span class="header__cart-item-multiply ">x</span>
-                                                <span class="header__cart-item-qnt ">1</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="header__cart-item-body ">
-                                            <span class="header__cart-item-desc ">
-                                                Phân Loại : SUV
-                                            </span>
-                                            <span class="header__cart-item-remove ">Xoá</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <a href="" class="header__cart-view-cart btn btn--primary ">Xem giỏ hàng</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -319,7 +259,7 @@
                     <div class="grid__column-10 ">
                         <div class="home-filter ">
                             <span class="home-filter__label ">Sắp xếp theo</span>
-                            <button class="btn home-filter__btn ">Phổ Biến</button>
+                            <button class="btn home-filter__btn">Phổ Biến</button>
                             <button class="btn home-filter__btn btn--primary ">Mới Nhất</button>
                             <button class="btn home-filter__btn " home-filter__>Bán Chạy</button>
 
@@ -355,10 +295,412 @@
                             </div>
                         </div>
                         <div class="home-product">
-                            <div class="grid__row" id="grid-products">
+                            <div class="grid__row">
                                 <!-- Product item -->
 
+                                <div class="grid__column-2-4">
 
+                                    <a class="home-product-item" href="# ">
+                                        <img src="./assets/img/img1.jpeg" alt="" class="home-product-item__img">
+                           
+                                        <h5 class="home-product-item__name">iPhone 1 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old">19.999.999</span>
+                                            <div class="home-product-item__price-current">15.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        
+                                        <img src="./assets/img/img2.jpeg" alt="" class="home-product-item__img">
+
+                                        <h5 class="home-product-item__name ">iPhone 2 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">12.999.999</span>
+                                            <div class="home-product-item__price-current ">11.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        
+                                        <img src="./assets/img/img3.jpeg" alt="" class="home-product-item__img">
+
+                                        <h5 class="home-product-item__name ">iPhone 3 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">16.999.999</span>
+                                            <div class="home-product-item__price-current ">14.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img4.jpg" alt="" class="home-product-item__img">
+
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 4 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">14.999.999</span>
+                                            <div class="home-product-item__price-current ">13.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img5.jpeg" alt="" class="home-product-item__img">
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 5 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">17.999.999</span>
+                                            <div class="home-product-item__price-current ">16.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img7.jpeg" alt="" class="home-product-item__img">
+                                       
+                                        <h5 class="home-product-item__name ">iPhone 6 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">16.999.999</span>
+                                            <div class="home-product-item__price-current ">15.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="#">
+                                        <img src="./assets/img/img6.webp" alt="" class="home-product-item__img">
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 7 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">17.999.999</span>
+                                            <div class="home-product-item__price-current ">16.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img1.jpeg" alt="" class="home-product-item__img">
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 8 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">18.999.999</span>
+                                            <div class="home-product-item__price-current ">17.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img7.jpeg" alt="" class="home-product-item__img">
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 8 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">19.999.999</span>
+                                            <div class="home-product-item__price-current ">18.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-heart "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+
+                                    <a class="home-product-item " href="# ">
+                                        <img src="./assets/img/img2.jpeg" alt="" class="home-product-item__img">
+                                        
+                                        <h5 class="home-product-item__name ">iPhone 9 Promax 128G</h5>
+                                        <div class="home-product-item__price ">
+                                            <span class="home-product-item__price-old ">18.999.999</span>
+                                            <div class="home-product-item__price-current ">17.429.000</div>
+                                        </div>
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like ">
+                                                <!-- <i class=" far fa-hert "></i> -->
+                                                <i class=" fas fa-heart "></i>
+                                            </span>
+                                            <div class="home-product-item__star ">
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="home-product-item__gold fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+
+                                            </div>
+                                            <span class="home-product-item__sold ">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin ">
+                                            <span>SamSung</span>
+                                            <span>Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite ">
+                                            <i class="fas fa-check "></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off ">
+                                            <span class="home-product-item__sale-off-percent ">43%</span>
+                                            <span class="home-product-item__sale-off-label ">GIẢM</span>
+                                        </div>
+
+                                    </a>
+                                </div>
 
 
                             </div>
@@ -623,8 +965,8 @@
     </div>
     <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
 
-    <script src="./js/product.js "></script>
     <script src="./js/validations.js"></script>
+    <script src="./js/cart2.js "></script>
 
 </body>
 
