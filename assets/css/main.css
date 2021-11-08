@@ -114,11 +114,6 @@
     display: block;
 }
 
-.header__navbar-title--no-pointer:hover {
-    cursor: text;
-    color: var(--white-color);
-}
-
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -136,7 +131,9 @@
     align-items: center;
 }
 
-.header__navbar-icon:hover,
+
+/* .header__navbar-icon:hover, */
+
 .header__navbar-item:hover,
 .header__navbar-item-link:hover {
     color: rgba(255, 255, 255, 0.7);
@@ -332,14 +329,81 @@
     font-weight: 400;
 }
 
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    animation: fadeIn linear 0.1s;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+
+.modal-close {
+    float: right;
+    padding: 8px;
+    font-size: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
 
 /* Authen modal */
 
-.auth-form {
-    width: 500px;
+.auth-form__rigister.active {
+    display: block;
+}
+
+.auth-form__login.active {
+    display: block;
+}
+
+.auth-form-label {
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.auth-form__rigister {
+    min-width: 500px;
     background-color: var(--white-color);
     border-radius: 5px;
     overflow: hidden;
+    display: none;
+}
+
+.auth-form__login {
+    min-width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
 }
 
 .auth-form__container {
@@ -360,18 +424,22 @@
     color: var(--text-color);
 }
 
-.auth-form__switch-btn {
+.auth-form__rigister-btn {
     font-size: 1.6rem;
     color: var(--primary-color);
     cursor: pointer;
 }
 
-.auth-form__form {}
+.auth-form__login-btn {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 
 .auth-form__input {
     width: 100%;
     height: 40px;
-    margin-top: 16px;
+    margin-bottom: 16px;
     padding: 0 12px;
     font-size: 1.4rem;
     border-radius: 2px;
@@ -380,7 +448,7 @@
 }
 
 .auth-form__input:focus {
-    border-color: #888;
+    border-color: var(--primary-color);
 }
 
 .auth-form__aside {
@@ -400,7 +468,7 @@
 }
 
 .auth-form__controls {
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-end;
 }
@@ -505,12 +573,12 @@
     left: 20px;
 }
 
-.header__cart:hover .header__cart-list {
+/* .header__cart:hover .header__cart-list {
     display: block;
-}
+} */
 
 .header__cart-list {
-    display: none;
+    /* display: none; */
     right: -11px;
     width: 400px;
     cursor: default;
@@ -525,7 +593,7 @@
     z-index: 1;
 }
 
-.header__cart-list::after {
+/* .header__cart-list::after {
     content: "";
     top: -25px;
     right: 3px;
@@ -534,7 +602,7 @@
     border-style: solid;
     border-width: 16px 20px;
     border-color: transparent transparent var(--white-color) transparent;
-}
+} */
 
 .header__cart-heading {
     text-align: left;
@@ -654,12 +722,12 @@
 .header__cart-list--no-cart-text {
     margin: 12px 0 0 0;
     font-size: 1.4rem;
-    display: none;
+    /* display: none; */
 }
 
 .header__cart-no-cart-img {
     width: 54%;
-    display: none;
+    /* display: none; */
 }
 
 .header__cart-icon {
@@ -985,7 +1053,7 @@
 }
 
 .home-product-item__img {
-    padding-top: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
@@ -998,8 +1066,8 @@
     font-weight: 400;
     line-height: 1.8rem;
     color: var(--text-color);
-    height: 3.6rem;
-    margin: 10px 10px 6px;
+    height: 2.6rem;
+    margin: 6px;
     overflow: hidden;
     display: block;
     /* Dấu 3 chấm ... */
@@ -1047,12 +1115,6 @@
 
 .home-product-item__gold {
     color: var(--star-gold-color);
-}
-
-.home-product-item__sold {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-left: 6px;
 }
 
 .home-product-item__origin {
